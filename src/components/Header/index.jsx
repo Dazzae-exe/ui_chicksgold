@@ -56,10 +56,10 @@ function Header() {
           {shoppingCart.length <= 0 ? (
             ""
           ) : (
-            <>
+            <div>
               <span className="cart-icon__badge">{shoppingCart.length}</span>
               <IconShoppingCart width={24} height={24} />
-            </>
+            </div>
           )}
         </div>
         <div className="user-actions">

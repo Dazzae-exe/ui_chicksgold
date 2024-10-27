@@ -65,10 +65,8 @@ nav ul li a:hover {
 .user-actions {
   display: flex;
   align-items: center;
-  width: fit-content;
   justify-content: flex-end;
   gap: 8px;
-  max-width: 210px;
   width: 100%;
 
 }
@@ -82,7 +80,7 @@ nav ul li a:hover {
   align-items: flex-end;
   justify-content: center;
   cursor: pointer;
-  width: 100%;
+  width: fit-content;
 }
 
 .cart-icon__badge {
@@ -147,9 +145,17 @@ nav ul li a:hover {
   .container {
     justify-content: space-between;
   } 
+
+  .user-actions {
+    max-width: 120px;
+  }
   
   .user-actions > div {
     display: none;
+  }
+
+  .shoppingCart-icon {
+    width: 100%;
   }
 }
 
