@@ -1,0 +1,39 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .prev-page,
+  .next-page,
+  .page-number {
+    margin: 0 5px;
+    padding: 16px;
+    background-color: #3d405b;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .prev-page:hover,
+  .next-page:hover,
+  .page-number:hover {
+    background-color: #297fb9a3;
+  }
+
+  .prev-page:active,
+  .next-page:active,
+  .page-number:active {
+    background-color: #2980b9;
+  }
+  
+  .page-number.active {
+    background-color: #2980b9;
+  }
+  
+  .ellipsis {
+    margin: 0 5px;
+    padding: 16px;
+  }

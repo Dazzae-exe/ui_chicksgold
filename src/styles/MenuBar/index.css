@@ -1,0 +1,101 @@
+.menu-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+.menu-sheet {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 300px;
+  height: 100%;
+  background-color: #303141;
+  box-shadow: -2px 0 4px rgba(0, 0, 0, 0.1);
+  transition: right 0.3s ease;
+  z-index: 100;
+}
+
+.sign-in-button {
+  width: 100%;
+}
+
+.currency-select {
+  width: 100%;
+}
+
+.menu-sheet.open {
+  right: 0;
+}
+
+.menu-sheet-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.menu-sheet-header h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.menu-sheet-footer {
+  height: fit-content;
+  margin-top: 16px;
+  width: 100%;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.menu-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-list li a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 15px 20px;
+  border-radius: 4px;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.menu-list li a:hover {
+  background-color: #3b415a;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 90;
+}
+
+@media screen and (max-width: 1024px) {
+  .menu-toggle {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .menu-sheet {
+    width: 100%;
+    right: -100%;
+  }
+}

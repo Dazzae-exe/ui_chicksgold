@@ -1,0 +1,179 @@
+.header {
+  background-color: #303141;
+  min-height: 70px;
+  height: 70px;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  padding: 10px 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.logo {
+  width: 150px;
+  height: 32px;
+  max-height: 32px;
+}
+
+.logo-container {
+  max-width: 200px;
+  width: 100%;
+  height: 100%;
+  padding: 0px 10px;
+  border-right: 1px solid #fff;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  font-size: 12px;
+  justify-content: center;
+}
+
+
+nav ul li a {
+  display: flex;
+  align-items: center;
+  padding: 13px 12px;
+  border-radius: 4px;
+  color: #ffffff;
+  text-decoration: none;
+  gap: 4px
+}
+
+nav ul li a:hover {
+  background-color: #3b415a;
+  backdrop-filter: blur(10px);
+}
+
+.arrow-down {
+  transform: rotate(0deg);
+  transition: all 0.3s ease-in-out;
+}
+
+.arrow-up {
+  transform: rotate(180deg);
+  transition: all 0.15s ease-in-out;
+}
+
+.user-actions {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  justify-content: flex-end;
+  gap: 8px;
+  max-width: 210px;
+  width: 100%;
+
+}
+
+.shoppingCart-icon {
+  position: relative;
+  max-height: 40px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.cart-icon__badge {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: -8px;
+  right: -8px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #3498db;
+  text-align: center;
+}
+
+.currency-select,
+.sign-in-button {
+  padding: 0.5rem;
+  background-color: transparent;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out
+}
+
+.currency-select:hover {
+  background-color: #3b415a;
+  backdrop-filter: blur(10px);
+}
+
+.sign-in-button {
+  background-color: #4caf50;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out
+}
+
+.sign-in-button:hover {
+  background-color: #4caf4fd8;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-menu-icon {
+  display: none;
+}
+
+/* Responsive design */
+
+@media screen and (max-width: 1024px) {
+  nav ul {
+    display: none;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+  }
+
+  .container {
+    justify-content: space-between;
+  } 
+  
+  .user-actions > div {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .user-actions {
+    width: 210px;
+  }
+
+  .button-icon {
+    display: none;
+  }
+
+  .logo-container {
+    padding: 0px 10px;
+    border-right: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .user-actions > button > svg {
+    display: none;
+  }
+
+  .logo {
+    width: 115px;
+  }
+}

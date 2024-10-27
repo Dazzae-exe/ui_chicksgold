@@ -1,0 +1,49 @@
+.payment-methods {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2b2c3b;
+    margin-top: 2rem;
+    height: 100px;
+    position: relative;
+  }
+
+  .gradient-line {
+    background: linear-gradient(to bottom, #3d405b65, #2b2c3bdb);
+    height: 20px;
+    width: 100%;
+    position: absolute;
+    top: -10px;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  
+  .payment-methods img {
+    height: 50px;
+    margin: 0 10px;
+  }
+  
+  .more-methods {
+    font-size: 14px;
+    color: #8d99ae;
+  }
+
+  /* Responsive design */
+
+  @media (max-width: 768px) {
+    .payment-methods img {
+      height: 30px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .payment-methods img {
+      height: 20px;
+    }
+  }
+
+  @media (max-width: 370px) {
+    .payment-methods img {
+      height: 15px;
+    }
+  }
