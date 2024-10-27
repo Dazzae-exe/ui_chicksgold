@@ -5,7 +5,7 @@ A responsive React-based UI implementation for Chicks Gold Inc., featuring a mod
 ## Installation
 
 1. Clone the repository:
-`git clone ...`
+`git clone https://github.com/Dazzae-exe/ui_chicksgold.git`
 
 2. Install the project:
 `npm install`
